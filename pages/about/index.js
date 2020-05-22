@@ -9,6 +9,11 @@ import {
 import TextyAnim from "rc-texty";
 export default function About() {
   return (
+    <>
+     <Hidden mdUp>
+       
+     </Hidden>
+     <Hidden smDown>   
     <Container>
       <Content>
         <MainText>
@@ -34,5 +39,7 @@ export default function About() {
         </MainDiv>
       </Content>
     </Container>
+    </Hidden>
+    </>
   );
 }

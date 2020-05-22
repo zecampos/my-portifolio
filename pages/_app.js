@@ -7,7 +7,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Navbar from "../src/components/Navbar";
 import NavBarMobile from "../src/components/NavBarMobile";
-import { Hidden } from "@material-ui/core";
+import { Hidden, Container } from "@material-ui/core";
 
 import theme from "../src/styles/theme";
 
@@ -18,10 +18,14 @@ export default class MyApp extends App {
       <>
         <ThemeProvider theme={theme}>
           <Hidden smDown>
+          <Container>
             <Navbar></Navbar>
+               </Container>
           </Hidden>
           <Hidden mdUp>
+          <Container>
             <NavBarMobile />
+            </Container>
           </Hidden>
           <PageTransition timeout={300} classNames="page-transition">
             <Component {...pageProps} />

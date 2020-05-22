@@ -11,3 +11,8 @@ export const Content = styled.div`
   width: 100%;
   align-self: center;
 `;
+export const TextMyDescription = styled.span`
+  font-size: 1.2em;
+  font-family: 'Gilroy-Medium' ;
+  text-align: center
+`;
