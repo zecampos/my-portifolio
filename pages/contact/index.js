@@ -7,7 +7,7 @@ import {
   ViewSkills,
   BoxSkills,
   CustomBtn,
-} from "./styles";
+} from "../../src/components/styles/contact";
 import TextyAnim from "rc-texty";
 import {
   AiOutlineLinkedin,
@@ -17,7 +17,7 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
-export default function Contact() {
+function Contact() {
   return (
     <Container>
       <Content>
@@ -77,3 +77,5 @@ export default function Contact() {
     </Container>
   );
 }
+
+export default Contact;

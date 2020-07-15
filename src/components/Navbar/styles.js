@@ -4,18 +4,18 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   width: 100%;
-  max-width: 950px;
 `;
 export const NavContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
 `;
 export const Nav = styled.nav`
   background: transparent;
   width: 100%;
-  max-width: 950px;
   height: 60px;
   border-bottom: 0.5px solid #070707;
 

@@ -1,5 +1,10 @@
 import React from "react";
-import { Container, Content, MainText, ViewCarousel } from "./styles";
+import {
+  Container,
+  Content,
+  MainText,
+  ViewCarousel,
+} from "../../src/components/styles/portifolio";
 import TextyAnim from "rc-texty";
 import { Carousel } from "react-responsive-carousel";
 import Link from "next/link";
@@ -18,7 +23,7 @@ function goToLink(item) {
   }
 }
 
-export default function Portifolio() {
+function Portifolio() {
   return (
     <Container>
       <Content>
@@ -56,3 +61,5 @@ export default function Portifolio() {
     </Container>
   );
 }
+
+export default Portifolio;

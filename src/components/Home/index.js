@@ -1,53 +1,44 @@
 import React from "react";
 import TextyAnim from "rc-texty";
+import { Hidden, Container, Grid } from "@material-ui/core";
 import {
-  Container,
   Content,
   TextVertical,
   TextName,
   TextMyDescription,
   MyImage,
   ContentLast,
+  ContentMiddle,
 } from "./styles";
 import { Row, Column } from "../../components/Grid/Grid";
+
 export default function Home() {
   return (
-    <Row>
-      <Column xs={12} sm={12} md={4} lg={4}>
+    <Grid style={{ paddingLeft: "10%", paddingRight: "10%" }} container>
+      <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
         <Content>
           <TextName>
-            {/* <TextyAnim type="left" mode="smooth" onEnd={(type) => {}}> */}
-            Jose
-            {/* </TextyAnim> */}
-            <br></br>
-            {/* <TextyAnim type="left" mode="smooth" onEnd={(type) => {}}> */}
-            Campos
-            {/* </TextyAnim> */}
+            <TextyAnim type="left" mode="smooth" onEnd={(type) => {}}>
+              Jose
+            </TextyAnim>
+            <TextyAnim type="left" mode="smooth" onEnd={(type) => {}}>
+              Campos
+            </TextyAnim>
           </TextName>
         </Content>
-      </Column>
-      <Column xs={12} sm={12} md={4} lg={4}>
-        <Content>
+      </Grid>
+      <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+        <ContentMiddle>
           <TextMyDescription>
-            {/* <TextyAnim type="left" mode="smooth" onEnd={(type) => {}}> */}
             JavaScript Developer
-            {/* </TextyAnim> */}
-          </TextMyDescription>
-          <br></br>
-          <TextMyDescription>
-            {/* <TextyAnim type="left" mode="smooth" onEnd={(type) => {}}> */}
+            <br></br>
             34 years old
-            {/* </TextyAnim> */}
-          </TextMyDescription>
-          <br></br>
-          <TextMyDescription>
-            {/* <TextyAnim type="left" mode="smooth" onEnd={(type) => {}}> */}
+            <br></br>
             Ribeirao Preto - Brazil
-            {/* </TextyAnim> */}
           </TextMyDescription>
-        </Content>
-      </Column>
-      <Column xs={12} sm={12} md={4} lg={4}>
+        </ContentMiddle>
+      </Grid>
+      <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
         <ContentLast>
           <TextVertical>
             {/* <TextyAnim type="top" mode="smooth" onEnd={(type) => {}}> */}
@@ -55,13 +46,11 @@ export default function Home() {
             {/* </TextyAnim> */}
           </TextVertical>
         </ContentLast>
-      </Column>
+      </Grid>
 
-      {/* <Column xs={12} sm={12} md={4} lg={4}>
-        <Content>
-          <MyImage src="/images/me.svg" alt="Jose Campos" />
-        </Content>
-      </Column> */}
-    </Row>
+      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+        <MyImage src="/images/me.svg" alt="Jose Campos" />
+      </Grid>
+    </Grid>
   );
 }

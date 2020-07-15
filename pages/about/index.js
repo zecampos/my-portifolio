@@ -1,19 +1,21 @@
 import React from "react";
+import { Hidden } from "@material-ui/core";
 import {
   Container,
   Content,
   MainText,
   TextDescription,
   MainDiv,
-} from "./styles";
+} from "../../src/components/styles/about";
 import TextyAnim from "rc-texty";
-export default function About() {
+
+function About() {
   return (
-    <>
-     <Hidden mdUp>
-       
-     </Hidden>
-     <Hidden smDown>   
+    // <>
+    //   <Hidden mdUp>
+    //     <p>Desktop</p>
+    //   </Hidden>
+    //   <Hidden smDown>
     <Container>
       <Content>
         <MainText>
@@ -39,7 +41,9 @@ export default function About() {
         </MainDiv>
       </Content>
     </Container>
-    </Hidden>
-    </>
+    //   </Hidden>
+    // </>
   );
 }
+
+export default About;
